@@ -30,12 +30,12 @@ In this study, we propose a novel computational method named iPiDA-LGE for ident
 
 
 ##### Running example
-#####Training for local piRNA-disease graph  
+----- Training for local piRNA-disease graph  
 'python -u main.py \  
-            --hop={} \ ;                 # hop number of extracting local graph (default=2)  
-            --lr ={} \ ;                 # learning rate (default=1e-3)  
-            --epochs ={} \ ;          # number of epochs to train  (default=20)  
-            '.format(hop, lr, epochs) 
+        --hop={} \ ;                 # hop number of extracting local graph (default=2)  
+        --lr ={} \ ;                 # learning rate (default=1e-3)  
+        --epochs ={} \ ;          # number of epochs to train  (default=20)  
+'.format(hop, lr, epochs) 
 
-######Integrating and evaluating of local and global prediction result  
+----- Integrating and evaluating of local and global prediction result  
 python ensemble.py 
