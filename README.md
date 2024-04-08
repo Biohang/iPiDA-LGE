@@ -8,11 +8,11 @@ In this study, we propose a novel computational method named iPiDA-LGE for ident
 **Figure.1**. The framework of iPiDA-LGE.
 
 # Datasets 
------ piRNA_information.xlsx：list of piRNA names and piRNAs' corresponding number in the dataset  
------ disease_information.xlsx: list of disease names and diseases' corresponding number 
------ piSim.npy: piRNA-piRNA similarity matrix 
------ DiseaSim.npy: disease-disease similarity matrix 
------adjPD.npy: piRNA-disease association matrix, a(i,j) represents the association between i-th piRNA and j-th disease 
+----- piRNA_information.xlsx：list of piRNA names and piRNAs' corresponding number in the dataset   
+----- disease_information.xlsx: list of disease names and diseases' corresponding number  
+----- piSim.npy: piRNA-piRNA similarity matrix  
+----- DiseaSim.npy: disease-disease similarity matrix  
+-----adjPD.npy: piRNA-disease association matrix, a(i,j) represents the association between i-th piRNA and j-th disease  
 -----PD_ben_ind_label.npy: benchmark dataset and independent dataset division, where the label 1 and -20 represent positive and negative samples in benchmark dataset, label -1 and -10 represent positive and negative samples in independent dataset
 
 # Usage
