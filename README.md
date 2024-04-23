@@ -1,11 +1,4 @@
-# iPiDA-LGE: A Local and Global Graph Ensemble Learning Framework for Identifying PiRNA-Disease Associations
-
 This repository contains the source code used in our paper titled iPiDA-LGE: A Local and Global Graph Ensemble Learning Framework for Identifying PiRNA-Disease Associations. The code is implemented to realize the proposed predictor, and the dataset and tutorials are also provided to assist users in utilizing the code.
-
-# Introduction
-In this study, we propose a novel computational method named iPiDA-LGE for identifying piRNA-disease associations. iPiDA-LGE comprises two graph convolutional neural network modules based on local and global piRNA-disease graphs, aimed at capturing specific and general features of piRNA-disease pairs. Additionally, it integrates their refined and macroscopic inferences to derive the final prediction result. The experimental results show that iPiDA-LGE effectively leverages the advantages of both local and global graph learning, thereby achieving stronger pair representation and superior prediction performance.
-![image](https://github.com/Biohang/iPiDA-LGE/blob/main/Image/Fig1.jpg)  
-**Figure.1**. The framework of iPiDA-LGE.
 
 # Datasets 
 ----- piRNA_information.xlsx：list of piRNA names and piRNAs' corresponding number in the dataset   
