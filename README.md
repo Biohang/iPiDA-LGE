@@ -1,8 +1,8 @@
 This repository contains the source code used in our paper titled iPiDA-LGE: A Local and Global Graph Ensemble Learning Framework for Identifying PiRNA-Disease Associations. The code is implemented to realize the proposed predictor, and the dataset and tutorials are also provided to assist users in utilizing the code.
 
 # Datasets 
------ piRNA_information.xlsx：list of piRNA names and piRNAs' corresponding number in the dataset   
------ disease_information.xlsx: list of disease names and diseases' corresponding number  
+----- MNDR_piRNA.xlsx：list of piRNA names and piRNAs' corresponding number in the dataset   
+----- MNDR_disease.xlsx: list of disease names and diseases' corresponding number  
 ----- piSim.npy: piRNA-piRNA similarity matrix  
 ----- DiseaSim.npy: disease-disease similarity matrix  
 ----- adjPD.npy: piRNA-disease association matrix, a(i,j) represents the association between i-th piRNA and j-th disease  
