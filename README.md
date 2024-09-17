@@ -4,6 +4,7 @@ This repository contains the source code used in our paper titled iPiDA-LGE: A L
 ----- MNDR_piRNA.xlsx：list of piRNA names and piRNAs' corresponding number in the dataset   
 ----- MNDR_disease.xlsx: list of disease names and diseases' corresponding number  
 ----- DiseaSim.npy: disease-disease similarity matrix  
+----- piSim.csv: piRNA-piRNA similarity matrix, beacuse original piSim.npy is a large file, the file in .csv format is uploaded   
 ----- adjPD.npy: piRNA-disease association matrix, a(i,j) represents the association between i-th piRNA and j-th disease  
 ----- PD_ben_ind_label.npy: one example of benchmark dataset and independent dataset division, where the label 1 and -20 represent positive and negative samples in benchmark dataset, label -1 and -10 represent positive and negative samples in independent dataset
 
