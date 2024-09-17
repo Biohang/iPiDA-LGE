@@ -5,7 +5,7 @@ This repository contains the source code used in our paper titled iPiDA-LGE: A L
 ----- MNDR_disease.xlsx: list of disease names and diseases' corresponding number  
 ----- DiseaSim.npy: disease-disease similarity matrix  
 ----- adjPD.npy: piRNA-disease association matrix, a(i,j) represents the association between i-th piRNA and j-th disease  
------ PD_ben_ind_label.npy: benchmark dataset and independent dataset division, where the label 1 and -20 represent positive and negative samples in benchmark dataset, label -1 and -10 represent positive and negative samples in independent dataset
+----- PD_ben_ind_label.npy: one example of benchmark dataset and independent dataset division, where the label 1 and -20 represent positive and negative samples in benchmark dataset, label -1 and -10 represent positive and negative samples in independent dataset
 
 # Usage
 ##### Basic environment setup:  
