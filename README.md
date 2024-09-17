@@ -20,7 +20,7 @@ This repository contains the source code used in our paper titled iPiDA-LGE: A L
 ----- util_function.py records the basic functional functions for constructing training and testing datasets, and constructing local context graphs for target 
       piRNA-disease pairs  
 ----- ensemble_test_plot.py records the integration, evaluation and visualization of local and global prediction result  
------ evaluation_fun.py records the basic method evaluation functions 
+----- evaluation_fun.py records the basic method evaluation functions   
 ----- statistical_evaluation_plot.py records the statistical test function and statistical result visualization 
 
 ##### Running example
