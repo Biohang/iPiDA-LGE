@@ -17,9 +17,11 @@ This repository contains the source code used in our paper titled iPiDA-LGE: A L
 ----- The source code and tutorials for global graph learning module in iPiDA-LGE can be available at http://bliulab.net/iPiDA-SWGCN/tutorial/  
 ----- The training codes for local graph learning module in iPiDA-LGE include the scripts main.py and train_eval.py  
 ----- models.py records the graph neural network for local context graph learning in iPiDA-LGE  
------ util_function.py records the basic functional functions for constructing local context graphs for target piRNA-disease pairs  
------ ensemble.py records the integration and evaluation of local and global prediction result  
-
+----- util_function.py records the basic functional functions for constructing training and testing datasets, and constructing local context graphs for target 
+      piRNA-disease pairs  
+----- ensemble_test_plot.py records the integration, evaluation and visualization of local and global prediction result  
+----- evaluation_fun.py records the basic method evaluation functions 
+----- statistical_evaluation_plot.py records the statistical test function and statistical result visualization 
 
 ##### Running example
 ----- Training for local piRNA-disease graph  
@@ -28,6 +30,3 @@ This repository contains the source code used in our paper titled iPiDA-LGE: A L
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--lr ={} \ ;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# learning rate (default=1e-3)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--epochs ={} \ ;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# number of epochs to train  (default=20)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.format(hop, lr, epochs) 
-
------ Integrating and evaluating of local and global prediction result  
-python ensemble.py 
