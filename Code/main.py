@@ -67,6 +67,21 @@ parser.add_argument('--keep-old', action='store_true', default=False,
                     help='if True, do not overwrite old .py files in the result folder')
 parser.add_argument('--save-interval', type=int, default=20,
                     help='save model states every # epochs ')
+parser.add_argument('--data-name', default='ml_100k', help='dataset name')
+parser.add_argument('--data-appendix', default='',
+                    help='what to append to save-names when saving datasets')
+parser.add_argument('--testing', action='store_true', default=False,
+                    help='if set, use testing mode which splits all ratings into train/test;\
+                    otherwise, use validation model which splits all ratings into \
+                    train/val/test and evaluate on val only')
+parser.add_argument('--save-appendix', default='',
+                    help='what to append to save-names when saving results')
+parser.add_argument('--max-train-num', type=int, default=None,
+                    help='set maximum number of train data to use')
+parser.add_argument('--max-val-num', type=int, default=None,
+                    help='set maximum number of val data to use')
+parser.add_argument('--max-test-num', type=int, default=None,
+                    help='set maximum number of test data to use')
 # subgraph extraction settings
 parser.add_argument('--hop', default=2, metavar='S',
                     help='hop number of extracting local graph')
@@ -118,6 +133,10 @@ rating_map = None
 
 
 args.file_dir = os.path.dirname(os.path.realpath('__file__'))
+parser.add_argument('--testing', action='store_true', default=False,
+                    help='if set, use testing mode which splits all ratings into train/test;\
+                    otherwise, use validation model which splits all ratings into \
+                    train/val/test and evaluate on val only')
 
 def import_data():
     file_path = os.path.dirname(__file__)
